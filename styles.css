@@ -11,8 +11,96 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      font-family: Manrope;
   }
 
-  .great-code{
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .background{
+    background-color: #000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background-1 img{
+    position: fixed;
+    top: -130px;
+    right: -30px;
+  }
+
+  .background-2 img{
+    position: fixed;
+    bottom: 0px;
+    left: -100px;
+  }
+
+  .container{
+    width: 80vw;
+    margin: 2rem auto;
+  }
+
+.flex{
+  width: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+  nav{
+    display: flex;
+    align-items: center;
+  }
+
+  .flex nav a{
+    color:var(--text-color) ;
+    text-decoration: none;
+    padding: 6px 25px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  nav a:hover{
+    background-color: var(--button);
+    transition: 0.3s ease;
+  }
+
+  #nav a{
+    border: 1px solid var(--button);
+    padding: 10px 50px;
+    cursor: pointer;
+  }
+
+  #nav a:hover{
+    border: 1px solid var(--text-color);
+    background-color: var(--button);
+  }
+
+  .coffee{
+    color: var(--text-color);
+    font-size: 4.3rem;
+    margin-top: 2rem;
+    text-align: center;
+
+  }
+
+  .great-code h1{
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: var(--backgrond);
+    margin-top: -20px;
+  }
+
+  .rocket-coffee{
+    text-align: center;
+  }
+
+  .rocket-coffee img{
+    height: 100%;
+    margin-top: -20px;
   }
