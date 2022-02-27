@@ -14,29 +14,27 @@
       font-family: Manrope;
   }
 
-  body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-
   .background{
     background-color: #000;
     position: absolute;
     width: 100vw;
     height: 100vh;
+
   }
 
   .background-1 img{
+    width: 45%;
     position: fixed;
     top: -130px;
-    right: -30px;
+    right: 0;
   }
 
   .background-2 img{
+    width: 55%;
+    height: 100%;
     position: fixed;
     bottom: 0px;
-    left: -100px;
+    left: -90px;
   }
 
   .container{
@@ -44,12 +42,13 @@
     margin: 2rem auto;
   }
 
-.flex{
-  width: 105%;
+header.flex{
+  margin-left: 10rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
   nav{
     display: flex;
@@ -66,25 +65,25 @@
     font-size: 20px;
   }
 
-  nav a:hover{
+  .flex nav a:hover{
     background-color: var(--button);
     transition: 0.3s ease;
   }
 
-  #nav a{
+  #pega-cafe a{
     border: 1px solid var(--button);
     padding: 10px 50px;
     cursor: pointer;
   }
 
-  #nav a:hover{
+  #pega-cafe a:hover{
     border: 1px solid var(--text-color);
     background-color: var(--button);
   }
 
   .coffee{
     color: var(--text-color);
-    font-size: 4.3rem;
+    font-size: 6rem;
     margin-top: 2rem;
     text-align: center;
 
@@ -97,10 +96,25 @@
   }
 
   .rocket-coffee{
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: calc(100vw/5)
   }
 
   .rocket-coffee img{
-    height: 100%;
-    margin-top: -20px;
+    width: 90%;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  @media only screen and (max-width: 900px){
+    .background{
+      display:none;
+    }
+
+    .mobile{
+      display: block;
+    }
   }
